@@ -1,0 +1,151 @@
+/* Google Fonts import (include this in your HTML head or via @import in CSS) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f5f9fc;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-weight: 600;
+  color: #0077cc;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  background: #e9f4fb;
+  margin-bottom: 20px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 119, 204, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+ul li:hover {
+  box-shadow: 0 8px 20px rgba(0, 119, 204, 0.3);
+}
+
+ul li h2 {
+  color: #004a99;
+  margin-bottom: 10px;
+}
+
+ul li p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+ul li a {
+  color: #0077cc;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #004a99;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077cc;
+  color: #fff !important;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 25px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005a99;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #004a99;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px 14px;
+  margin-bottom: 20px;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #004a99;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #0077cc;
+  color: #fff;
+  padding: 14px 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #005a99;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  ul li {
+    padding: 15px 20px;
+  }
+
+  button[type="submit"],
+  .btn {
+    width: 100%;
+    padding: 14px 0;
+  }
+}
